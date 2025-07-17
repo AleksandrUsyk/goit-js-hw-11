@@ -18,6 +18,7 @@ form.addEventListener('submit', async e => {
     iziToast.error({
       title: 'Error',
       message: 'Please enter a search query!',
+      position: 'topRight', // ⬅️ тут
     });
     return;
   }
@@ -33,6 +34,7 @@ form.addEventListener('submit', async e => {
         title: 'Info',
         message:
           'Sorry, there are no images matching your search query. Please try again!',
+        position: 'topRight', // ⬅️ тут
       });
       return;
     }
@@ -42,6 +44,7 @@ form.addEventListener('submit', async e => {
     iziToast.error({
       title: 'Error',
       message: 'Something went wrong. Try again later.',
+      position: 'topRight', // ⬅️ тут
     });
   } finally {
     hideLoader();
